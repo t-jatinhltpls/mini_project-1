@@ -1,6 +1,7 @@
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -16,14 +17,20 @@ import com.github.javaparser.symbolsolver.resolution.typesolvers.ReflectionTypeS
 
 public class final1 {
     public static void main(String[] args) {
+    	
+    	
+    
         // Set the directory path
-        String directoryPath = "C:\\Users\\91829\\Desktop\\mini_project\\input\\";
+        String directoryPath = "D:\\Jatin\\Downloads\\java-large.tar\\java-large\\java-large";
         // Set the output file path
         String outputFilePath = "C:\\Users\\91829\\Desktop\\mini_project\\output\\";
+        int  count_method_in_folders=0;
+        int count_generated_folders=0;
 
         try {
         	 FileWriter fileWriter = new FileWriter(outputFilePath+"output.txt");
         	 Set<String> set = new HashSet<String>();
+        	 Set<String> function_set = new HashSet<String>();
         	 
             // Create a new ParserConfiguration instance and set a symbol resolver
             ParserConfiguration parserConfiguration = new ParserConfiguration();
@@ -34,10 +41,9 @@ public class final1 {
 
             // Get all files in the directory
             File directory = new File(directoryPath);
-            File[] files = directory.listFiles();
-            
-            
-
+            List<File> files = listFilesRecursive(directoryPath);
+            fileWriter.write("number of files: "+files.size()+"\n");
+          
             // Loop through all files in the directory
             for (File javaFile : files) {
                 if (javaFile.getName().endsWith(".java")) {
@@ -51,6 +57,8 @@ public class final1 {
                         // Loop through all method declarations
                         for (MethodDeclaration method : methods) {
                             // Get all method calls in the method
+                        	
+                        	try { 
                             List<MethodCallExpr> methodCalls = method.findAll(MethodCallExpr.class);
 
                             // Loop through all method calls
@@ -64,10 +72,15 @@ public class final1 {
                                         File methodFolder = new File(outputFilePath+fullyQualifiedName);
                                         if(!methodFolder.exists()) {
                                         	methodFolder.mkdir();
+                                        	count_generated_folders+=1;
                                         }
                                   	    System.out.println(fullyQualifiedName);
                                   	    String newDataPointFile = outputFilePath+fullyQualifiedName+"\\"+method.getName()+".java";
                                   	    System.out.println(newDataPointFile);
+                                  	    if(function_set.contains(method.toString())==false) {
+                                  	    	count_method_in_folders+=1;
+                                  	    	function_set.add(method.toString());
+                                  	    }
                                   	    writeFile(newDataPointFile, method.toString());  
                                     }
                                 } catch (UnsolvedSymbolException e) {
@@ -82,29 +95,56 @@ public class final1 {
 //                                	System.out.println("java.lang.RuntimeException for: "+method.getSignature());
                                 }
                                 
+                                catch(Exception e) {
+                                	
+                                }
+                                
                                 
                             }
+                        }
+                        catch(Exception e) {
+                        	
+                        }
                         }
                         
                         
                         
-                    } catch (IOException e) {
+                    } catch (Exception e) {
                         // Handle the exception
 //                        System.out.println("Error parsing file: " + javaFile.getName());
                     }
                 }
             }
-            for (String str : set) {
-                fileWriter.write(str + "\n");            
-            }
+           
+           
+                fileWriter.write("count of distincts functions in folders: "+count_method_in_folders + "\n");  
+                fileWriter.write("count all folders created: "+count_generated_folders + "\n");  
+
+            
             fileWriter.close();
             
-        } catch (IOException e) {
+        } catch (Exception e) {
             // Handle the exception
             System.out.println("Error writing to output file.");
         }
         
+//        System.out.println(count_folder);
         
+    }
+    
+    private static List<File> listFilesRecursive(String directoryPath) {
+        List<File> fileList = new ArrayList<File>();
+        File directory = new File(directoryPath);
+        File[] files = directory.listFiles();
+        for (File file : files) {
+//        	System.out.println("reading files");
+            if (file.isDirectory()) {
+                fileList.addAll(listFilesRecursive(file.getAbsolutePath()));
+            } else if (file.getName().endsWith(".java")) {
+                fileList.add(file);
+            }
+        }
+        return fileList;
     }
     
     private static void writeFile(String filename, String contents) {
