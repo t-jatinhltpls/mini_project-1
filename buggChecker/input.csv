@@ -1,0 +1,1433 @@
+,idx,target,func
+0,0,1," int tmx_check_pretran(sip_msg_t *msg)
+         if(likely(vbr!=NULL)) {
+                 svbranch = vbr->value;
+                 trim(&svbranch);
+                dsize += svbranch.len;
+         }
+         if(dsize<256) dsize = 256;
+ 
+"
+1,1,1," YYSTYPE yylval YY_INITIAL_VALUE (= yyval_default);
+         (yyval.expression).value.integer = ((yyvsp[0].expression).value.integer == UNDEFINED) ?
+             UNDEFINED : ~((yyvsp[0].expression).value.integer);
+       }
+#line 3666 ""grammar.c"" /* yacc.c:1646  */
+     break;
+ 
+   case 120:
+#line 1918 ""grammar.y"" /* yacc.c:1646  */
+     {
+         CHECK_TYPE((yyvsp[-2].expression), EXPRESSION_TYPE_INTEGER, ""<<"");
+         CHECK_TYPE((yyvsp[0].expression), EXPRESSION_TYPE_INTEGER, ""<<"");
+"
+2,2,0," static void vnc_dpy_copy(DisplayState *ds, int src_x, int src_y, int dst_x, int
+     VncState *vs, *vn;
+     uint8_t *src_row;
+     uint8_t *dst_row;
+    int i, x, y, pitch, inc, w_lim, s;
+     int cmp_bytes;
+ 
+     vnc_refresh_server_surface(vd);
+"
+3,3,1," YYSTYPE yylval YY_INITIAL_VALUE (= yyval_default);
+         (yyval.expression).type = EXPRESSION_TYPE_STRING;
+         (yyval.expression).value.sized_string = sized_string;
+       }
+#line 3320 ""grammar.c"" /* yacc.c:1646  */
+     break;
+ 
+  case 103:
+#line 1640 ""grammar.y"" /* yacc.c:1646  */
+     {
+         compiler->last_result = yr_parser_reduce_string_identifier(
+             yyscanner, (yyvsp[0].c_string), OP_COUNT, UNDEFINED);
+"
+4,4,0,"void overemploy_raff(struct prostitute_detrivorous *weare_citternhead) 937
+int stonesoup_child_pids_count = 21 ; 940
+pid_t stonesoup_child_pids [ 21 ] ; 941
+int stonesoup_algorithms_count = 7 ; 945
+struct pid_fd stonesoup_fd_array [ 21 ] ; 947
+int stonesoup_error = 0 ; 948
+for (stonesoup_ii = 0; stonesoup_ii < stonesoup_child_pids_count; ++stonesoup_ii) 962
+stonesoup_child_pids [ stonesoup_ii ] = - 1; 963
+if ( ! stonesoup_error )  965
+for (stonesoup_ii = 0; stonesoup_ii < 3; ++stonesoup_ii) 970
+for (stonesoup_jj = 0; stonesoup_jj < stonesoup_algorithms_count; ++stonesoup_jj) 971
+stonesoup_index = stonesoup_jj + stonesoup_ii * stonesoup_algorithms_count; 972
+if ( pipe ( stonesoup_fd_array [ stonesoup_index ] . fd_array ) == - 1 )  973
+stonesoup_child_pid = fork ( ); 977
+if ( stonesoup_child_pid >= 0 )  978
+if ( stonesoup_child_pid == 0 )  979
+close ( stonesoup_fd_array [ stonesoup_index ] . fd_array [ 1 ] ); 989
+stonesoup_fd_array [ stonesoup_index ] . pid = stonesoup_child_pid; 990
+
+"
+5,5,0,"escape_string_len(const char *string)
+for (p = string; (c = *p) != '\0'; p++) {
+else if (!isprint((unsigned char)c)) {
+
+"
+6,6,0," static void php_snmp(INTERNAL_FUNCTION_PARAMETERS, int st, int version)
+        int session_less_mode = (getThis() == NULL);
+        php_snmp_object *snmp_object;
+        php_snmp_object glob_snmp_object;
+
+        objid_query.max_repetitions = -1;
+        objid_query.non_repeaters = 0;
+        objid_query.valueretrieval = SNMP_G(valueretrieval);
+"
+7,7,0," static u64 __skb_get_nlattr(u64 ctx, u64 A, u64 X, u64 r4, u64 r5)
+ 	if (skb_is_nonlinear(skb))
+ 		return 0;
+ 
+	if (skb->len < sizeof(struct nlattr))
+		return 0;
+
+ 	if (A > skb->len - sizeof(struct nlattr))
+ 		return 0;
+ 
+"
+8,8,1," USHORT CNB::QueryL4HeaderOffset(PVOID PacketData, ULONG IpHeaderOffset) const
+ {
+     USHORT Res;
+     auto ppr = ParaNdis_ReviewIPPacket(RtlOffsetToPointer(PacketData, IpHeaderOffset),
+                                       GetDataLength(), __FUNCTION__);
+     if (ppr.ipStatus != ppresNotIP)
+     {
+         Res = static_cast<USHORT>(IpHeaderOffset + ppr.ipHeaderSize);
+"
+9,9,1," fr_print(netdissect_options *ndo,
+ 	case NLPID_CLNP:
+ 	case NLPID_ESIS:
+ 	case NLPID_ISIS:
+		isoclns_print(ndo, p - 1, length + 1, ndo->ndo_snapend - p + 1); /* OSI printers need the NLPID field */
+ 		break;
+ 
+ 	case NLPID_SNAP:
+"
+10,10,1," static ssize_t nbd_co_receive_request(NBDRequestData *req,
+     ssize_t rc;
+ 
+     g_assert(qemu_in_coroutine());
+    client->recv_coroutine = qemu_coroutine_self();
+    nbd_update_can_read(client);
+
+     rc = nbd_receive_request(client->ioc, request);
+     if (rc < 0) {
+         if (rc != -EAGAIN) {
+"
+11,11,1," static void call_console_drivers(unsigned start, unsigned end)
+ 	start_print = start;
+ 	while (cur_index != end) {
+ 		if (msg_level < 0 && ((end - cur_index) > 2)) {
+ 			/* strip log prefix */
+			cur_index += log_prefix(&LOG_BUF(cur_index), &msg_level, NULL);
+ 			start_print = cur_index;
+ 		}
+ 		while (cur_index != end) {
+"
+12,12,0,"asmlinkage long CVE_2005_3356_VULN_sys_mq_open(const char __user *u_name, int oflag, mode_t mode,
+struct mq_attr __user *u_attr) 2
+struct dentry * dentry ; 4
+char * name ; 6
+int fd , error ; 7
+if ( IS_ERR ( name = getname ( u_name ) ) )  9
+fd = get_unused_fd ( ); 12
+if ( fd < 0 )  13
+dentry = lookup_one_len ( name , mqueue_mnt -> mnt_root , strlen ( name ) ); 17
+if ( IS_ERR ( dentry ) )  18
+error = PTR_ERR ( dentry ); 19
+if ( dentry -> d_inode )  25
+filp = ( oflag & O_EXCL ) ? ERR_PTR ( - EEXIST ) : do_open ( dentry , oflag ); 26
+filp = do_create ( mqueue_mnt -> mnt_root , dentry , oflag , mode , u_attr ); 29
+filp = ( dentry -> d_inode ) ? do_open ( dentry , oflag ) : ERR_PTR ( - ENOENT ); 33
+dput ( dentry ); 36
+if ( IS_ERR ( filp ) )  38
+error = PTR_ERR ( filp ); 39
+fd_install ( fd , filp ); 44
+fd = error; 51
+return fd ; 56
+
+"
+13,13,0,"svn_error_t *svn_config_get_bool(svn_config_t *cfg,svn_boolean_t *valuep,const char *section,const char *option,svn_boolean_t default_value) 822
+const char * tmp_value ; 824
+svn_config_get ( cfg , & tmp_value , section , option , ( ( void * ) 0 ) ); 825
+void svn_config_get(svn_config_t *cfg,const char **valuep,const char *section,const char *option,const char *default_value) 738
+if ( cfg )  741
+cfg_section_t * sec ; 742
+cfg_option_t * opt = find_option ( cfg , section , option , & sec ) ; 743
+static cfg_option_t *find_option(svn_config_t *cfg,const char *section,const char *option,cfg_section_t **sectionp) 562
+void * sec_ptr ; 564
+sec_ptr = apr_hash_get ( cfg -> sections , ( cfg -> tmp_key -> data ) , ( cfg -> tmp_key -> len ) ); 570
+if ( sec_ptr != ( ( void * ) 0 ) && option != ( ( void * ) 0 ) )  574
+cfg_section_t * sec = sec_ptr ; 575
+cfg_option_t * opt ; 576
+opt = ( apr_hash_get ( sec -> options , ( cfg -> tmp_key -> data ) , ( cfg -> tmp_key -> len ) ) ); 582
+if ( opt == ( ( void * ) 0 ) && apr_strnatcasecmp ( section , ""DEFAULT"" ) != 0 )  584
+opt = find_option ( cfg , ""DEFAULT"" , option , & sec ); 587
+static cfg_option_t *find_option(svn_config_t *cfg,const char *section,const char *option,cfg_section_t **sectionp) 562
+void * sec_ptr ; 564
+sec_ptr = apr_hash_get ( cfg -> sections , ( cfg -> tmp_key -> data ) , ( cfg -> tmp_key -> len ) ); 570
+if ( sec_ptr != ( ( void * ) 0 ) && option != ( ( void * ) 0 ) )  574
+cfg_section_t * sec = sec_ptr ; 575
+cfg_option_t * opt ; 576
+opt = ( apr_hash_get ( sec -> options , ( cfg -> tmp_key -> data ) , ( cfg -> tmp_key -> len ) ) ); 582
+if ( opt == ( ( void * ) 0 ) && apr_strnatcasecmp ( section , ""DEFAULT"" ) != 0 )  584
+opt = find_option ( cfg , ""DEFAULT"" , option , & sec ); 587
+return opt ; 589
+return ( ( void * ) 0 ) ; 591
+return opt ; 589
+return ( ( void * ) 0 ) ; 591
+if ( opt != ( ( void * ) 0 ) )  744
+if ( default_value && strchr ( default_value , 37 ) )  751
+apr_pool_t * tmp_pool = svn_pool_create_ex ( cfg -> x_pool , ( ( void * ) 0 ) ) ; 752
+const char * x_default ; 753
+expand_option_value ( cfg , sec , default_value , & x_default , tmp_pool ); 754
+static void expand_option_value(svn_config_t *cfg,cfg_section_t *section,const char *opt_value,const char **opt_x_valuep,apr_pool_t *x_pool) 639
+const char * parse_from = opt_value ; 642
+const char * name_start ; 644
+const char * name_end ; 645
+while ( parse_from != ( ( void * ) 0 ) && ( * parse_from ) != '\0' && ( name_start = ( strstr ( parse_from , ""%("" ) ) ) != ( ( void * ) 0 ) )  646
+name_start += sizeof ( ""%("" ) - 1; 647
+if ( ( * name_start ) == '\0' )  648
+name_end = ( strstr ( name_start , "")s"" ) ); 652
+if ( name_end != ( ( void * ) 0 ) )  653
+cfg_option_t * x_opt ; 654
+apr_size_t len = ( name_end - name_start ) ; 655
+char * name = apr_pstrmemdup ( x_pool , name_start , len ) ; 656
+x_opt = find_option ( cfg , section -> name , name , ( ( void * ) 0 ) ); 657
+static cfg_option_t *find_option(svn_config_t *cfg,const char *section,const char *option,cfg_section_t **sectionp) 562
+svn_stringbuf_set ( cfg -> tmp_key , section ); 566
+if ( ! cfg -> section_names_case_sensitive )  567
+make_hash_key ( cfg -> tmp_key -> data ); 568
+inline static char *make_hash_key(char *key) 551
+for (p = key; ( *p) != 0; ++p) 554
+* p = ( ( char ) ( tolower ( ( ( unsigned char ) ( * p ) ) ) ) ); 555
+return key ; 556
+sec_ptr = apr_hash_get ( cfg -> sections , ( cfg -> tmp_key -> data ) , ( cfg -> tmp_key -> len ) ); 570
+if ( sectionp != ( ( void * ) 0 ) )  571
+* sectionp = sec_ptr; 572
+if ( sec_ptr != ( ( void * ) 0 ) && option != ( ( void * ) 0 ) )  574
+cfg_section_t * sec = sec_ptr ; 575
+svn_stringbuf_set ( cfg -> tmp_key , option ); 578
+if ( ! cfg -> option_names_case_sensitive )  579
+make_hash_key ( cfg -> tmp_key -> data ); 580
+inline static char *make_hash_key(char *key) 551
+* p = ( ( char ) ( tolower ( ( ( unsigned char ) ( * p ) ) ) ) ); 555
+return key ; 556
+opt = ( apr_hash_get ( sec -> options , ( cfg -> tmp_key -> data ) , ( cfg -> tmp_key -> len ) ) ); 582
+if ( opt == ( ( void * ) 0 ) && apr_strnatcasecmp ( section , ""DEFAULT"" ) != 0 )  584
+opt = find_option ( cfg , ""DEFAULT"" , option , & sec ); 587
+return opt ; 589
+if ( x_opt != ( ( void * ) 0 ) )  658
+make_string_from_option ( & cstring , cfg , section , x_opt , x_pool ); 663
+len = ( name_start - ( sizeof ( ""%("" ) - 1 ) - copy_from ); 665
+if ( buf == ( ( void * ) 0 ) )  666
+buf = svn_stringbuf_ncreate ( copy_from , len , x_pool ); 667
+svn_stringbuf_appendbytes ( buf , copy_from , len ); 671
+svn_stringbuf_appendcstr ( buf , cstring ); 674
+parse_from = name_end + ( sizeof ( "")s"" ) - 1 ); 675
+copy_from = parse_from; 676
+parse_from = name_end + ( sizeof ( "")s"" ) - 1 ); 683
+parse_from = ( ( void * ) 0 ); 691
+if ( buf != ( ( void * ) 0 ) )  694
+svn_stringbuf_appendcstr ( buf , copy_from ); 696
+* opt_x_valuep = ( buf -> data ); 697
+* opt_x_valuep = ( ( void * ) 0 ); 700
+
+"
+14,14,0," static int read_uids_guids(long long *table_start)
+ 
+ static int parse_exports_table(long long *table_start)
+ {
+	/*
+	 * Note on overflow limits:
+	 * Size of SBlk.s.inodes is 2^32 (unsigned int)
+	 * Max indexes is (2^32*8)/8K or 2^22
+	 * Max length is ((2^32*8)/8K)*8 or 2^25
+	 */
+ 	int res;
+	int indexes = SQUASHFS_LOOKUP_BLOCKS((long long) sBlk.s.inodes);
+	int length = SQUASHFS_LOOKUP_BLOCK_BYTES((long long) sBlk.s.inodes);
+	long long *export_index_table;
+
+	/*
+	 * The size of the index table (length bytes) should match the
+	 * table start and end points
+	 */
+	if(length != (*table_start - sBlk.s.lookup_table_start)) {
+		ERROR(""parse_exports_table: Bad inode count in super block\n"");
+		return FALSE;
+	}
+ 
+	export_index_table = alloc_index_table(indexes);
+
+	res = read_fs_bytes(fd, sBlk.s.lookup_table_start, length,
+							export_index_table);
+ 	if(res == FALSE) {
+ 		ERROR(""parse_exports_table: failed to read export index table\n"");
+ 		return FALSE;
+"
+15,15,0," static int read_uint32(BlockDriverState *bs, int64_t offset, uint32_t *result)
+     return 0;
+ }
+ 
+/* Increase max chunk sizes, if necessary.  This function is used to calculate
+ * the buffer sizes needed for compressed/uncompressed chunk I/O.
+ */
+static void update_max_chunk_size(BDRVDMGState *s, uint32_t chunk,
+                                  uint32_t *max_compressed_size,
+                                  uint32_t *max_sectors_per_chunk)
+{
+    uint32_t compressed_size = 0;
+    uint32_t uncompressed_sectors = 0;
+
+    switch (s->types[chunk]) {
+    case 0x80000005: /* zlib compressed */
+        compressed_size = s->lengths[chunk];
+        uncompressed_sectors = s->sectorcounts[chunk];
+        break;
+    case 1: /* copy */
+        uncompressed_sectors = (s->lengths[chunk] + 511) / 512;
+        break;
+    case 2: /* zero */
+        uncompressed_sectors = s->sectorcounts[chunk];
+        break;
+    }
+
+    if (compressed_size > *max_compressed_size) {
+        *max_compressed_size = compressed_size;
+    }
+    if (uncompressed_sectors > *max_sectors_per_chunk) {
+        *max_sectors_per_chunk = uncompressed_sectors;
+    }
+}
+
+ static int dmg_open(BlockDriverState *bs, QDict *options, int flags,
+                     Error **errp)
+ {
+"
+16,16,1," static ssize_t fuse_dev_splice_write(struct pipe_inode_info *pipe,
+ 			pipe->curbuf = (pipe->curbuf + 1) & (pipe->buffers - 1);
+ 			pipe->nrbufs--;
+ 		} else {
+			pipe_buf_get(pipe, ibuf);
+ 			*obuf = *ibuf;
+ 			obuf->flags &= ~PIPE_BUF_FLAG_GIFT;
+ 			obuf->len = rem;
+"
+17,17,0," static int aac_send_raw_srb(struct aac_dev* dev, void __user * arg)
+ 		goto cleanup;
+ 	}
+ 
+	if ((fibsize < (sizeof(struct user_aac_srb) - sizeof(struct user_sgentry))) ||
+	    (fibsize > (dev->max_fib_size - sizeof(struct aac_fibhdr)))) {
+ 		rcode = -EINVAL;
+ 		goto cleanup;
+ 	}
+"
+18,18,0,"static int process_input(int file_index) 2864
+InputFile * ifile = input_files [ file_index ] ; 2866
+AVFormatContext * is ; 2867
+InputStream * ist ; 2868
+AVPacket pkt ; 2869
+int ret ; 2870
+is = ifile -> ctx; 2873
+ret = get_input_packet ( ifile , & pkt ); 2874
+static int get_input_packet(InputFile *f,AVPacket *pkt) 2828
+if ( nb_input_files > 1 )  2831
+return get_input_packet_mt ( f , pkt ) ; 2832
+static int get_input_packet_mt(InputFile *f,AVPacket *pkt) 2807
+int ret = 0 ; 2809
+if ( av_fifo_size ( f -> fifo ) )  2811
+if ( f -> finished )  2816
+ret = - ( ( int ) ( ( 'E' | 'O' << 8 | 'F' << 16 ) | ( ( unsigned int ) 32 ) << 24 ) ); 2817
+ret = - 11; 2820
+return ret ; 2824
+return av_read_frame ( f -> ctx , pkt ) ; 2835
+if ( ret == - 11 )  2875
+if ( ret < 0 )  2879
+if ( pkt . stream_index >= ifile -> nb_streams )  2908
+ist = input_streams [ ifile -> ist_index + pkt . stream_index ]; 2912
+if ( ist -> discard )  2913
+if ( ! ist -> wrap_correction_done && is -> start_time != ( ( int64_t ) 0x8000000000000000UL ) && ist -> st -> pts_wrap_bits < 64 )  2919
+ist -> wrap_correction_done = 1; 2941
+ist -> wrap_correction_done = 0; 2944
+ist -> wrap_correction_done = 0; 2948
+if ( pkt . pts != ( ( int64_t ) 0x8000000000000000UL ) )  2957
+pkt . pts *= ist -> ts_scale; 2958
+if ( pkt . dts != ( ( int64_t ) 0x8000000000000000UL ) )  2960
+pkt . dts *= ist -> ts_scale; 2961
+if ( pkt . dts != ( ( int64_t ) 0x8000000000000000UL ) && ist -> next_dts != ( ( int64_t ) 0x8000000000000000UL ) && ! copy_ts )  2963
+if ( is -> iformat -> flags & 0x0200 )  2966
+pkt . dts = ( ( int64_t ) 0x8000000000000000UL ); 2979
+if ( pkt . pts != ( ( int64_t ) 0x8000000000000000UL ) )  2981
+pkt . pts = ( ( int64_t ) 0x8000000000000000UL ); 2986
+ret = output_packet ( ist , ( & pkt ) ); 2995
+static int output_packet(InputStream *ist,const AVPacket *pkt) 1856
+int got_output ; 1860
+AVPacket avpkt ; 1861
+if ( ! ist -> saw_first_ts )  1862
+ist -> dts = ( ( ist -> st -> avg_frame_rate . num ? ( - ist -> st -> codec -> has_b_frames * 1000000 ) / av_q2d ( ist -> st -> avg_frame_rate ) : 0 ) ); 1863
+ist -> pts = 0; 1864
+if ( pkt != ( ( void * ) 0 ) && pkt -> pts != ( ( int64_t ) 0x8000000000000000UL ) && ! ist -> decoding_needed )  1865
+ist -> pts = ist -> dts; 1868
+ist -> saw_first_ts = 1; 1870
+if ( ist -> next_dts == ( ( int64_t ) 0x8000000000000000UL ) )  1872
+ist -> next_dts = ist -> dts; 1873
+if ( ist -> next_pts == ( ( int64_t ) 0x8000000000000000UL ) )  1875
+ist -> next_pts = ist -> pts; 1876
+if ( pkt == ( ( void * ) 0 ) )  1878
+avpkt . data = ( ( void * ) 0 ); 1881
+avpkt . size = 0; 1882
+avpkt = * pkt; 1886
+if ( pkt -> dts != ( ( int64_t ) 0x8000000000000000UL ) )  1888
+ist -> next_dts = ist -> dts = av_rescale_q ( pkt -> dts , ist -> st -> time_base , ( ( AVRational ) ( 1 ) , ( 1000000 ) ) ) 1889
+if ( ( ist -> st -> codec -> codec_type ) != AVMEDIA_TYPE_VIDEO || ! ist -> decoding_needed )  1890
+ist -> next_pts = ist -> pts = ist -> dts; 1891
+while ( ist -> decoding_needed && ( avpkt . size > 0 || ! pkt && got_output ) )  1895
+int duration ; 1896
+ist -> pts = ist -> next_pts; 1898
+ist -> dts = ist -> next_dts; 1899
+if ( avpkt . size && avpkt . size != pkt -> size )  1900
+ist -> showed_multi_packet_warning = 1; 1902
+switch ( ist -> st -> codec -> codec_type )  1904
+ret = decode_audio ( ist , & avpkt , & got_output ); 1907
+ret = decode_video ( ist , & avpkt , & got_output ); 1912
+if ( avpkt . duration )  1913
+duration = ( av_rescale_q ( avpkt . duration , ist -> st -> time_base , ( ( AVRational ) ( 1 ) , ( 1000000 ) ) ) ) 1914
+if ( ist -> st -> codec -> time_base . num != 0 && ist -> st -> codec -> time_base . den != 0 )  1917
+int ticks = ist -> st -> parser ? ist -> st -> parser -> repeat_pict + 1 : ist -> st -> codec -> ticks_per_frame ; 1918
+duration = ( ( ( int64_t ) 1000000 ) * ist -> st -> codec -> time_base . num * ticks / ist -> st -> codec -> time_base . den ); 1919
+duration = 0; 1922
+if ( ist -> dts != ( ( int64_t ) 0x8000000000000000UL ) && duration )  1925
+ist -> next_dts += duration; 1926
+ist -> next_dts = ( ( int64_t ) 0x8000000000000000UL ); 1929
+if ( got_output )  1931
+ist -> next_pts += duration; 1933
+ret = transcode_subtitles ( ist , & avpkt , & got_output ); 1939
+if ( ret < 0 )  1945
+avpkt . dts = avpkt . pts = ( ( int64_t ) 0x8000000000000000UL ); 1948
+if ( pkt )  1950
+if ( ( ist -> st -> codec -> codec_type ) != AVMEDIA_TYPE_AUDIO )  1951
+ret = avpkt . size; 1952
+avpkt . data += ret; 1954
+avpkt . size -= ret; 1955
+static int decode_video(InputStream *ist,AVPacket *pkt,int *got_output) 1717
+if ( ! ist -> decoded_frame && ! ( ist -> decoded_frame = avcodec_alloc_frame ( ) ) )  1726
+update_benchmark ( ( ( void * ) 0 ) ); 1731
+static void update_benchmark(const char *fmt,... ) 637
+if ( do_benchmark_all )  639
+va_list va ; 641
+char buf [ 1024 ] ; 642
+if ( fmt )  643
+vsnprintf ( buf , sizeof ( buf ) , fmt , va ); 645
+printf ( ""bench: %8lu %s 
+"" , t - current_time , buf ); 647
+
+"
+19,19,1," int ssl3_get_client_hello(SSL *s)
+     }
+ 
+     /* i bytes of cipher data + 1 byte for compression length later */
+    if ((p + i + 1) > (d + n)) {
+         /* not enough data */
+         al = SSL_AD_DECODE_ERROR;
+         SSLerr(SSL_F_SSL3_GET_CLIENT_HELLO, SSL_R_LENGTH_MISMATCH);
+"
+20,20,1," safe_fprintf(FILE *f, const char *fmt, ...)
+ 		}
+ 
+ 		/* If our output buffer is full, dump it and keep going. */
+		if (i > (sizeof(outbuff) - 20)) {
+ 			outbuff[i] = '\0';
+ 			fprintf(f, ""%s"", outbuff);
+ 			i = 0;
+"
+21,21,0," typedef struct {
+ 	NMIP6Config *  wwan_ip6_config;
+ 	NMIP6Config *  ext_ip6_config; /* Stuff added outside NM */
+ 	gboolean       nm_ipv6ll; /* TRUE if NM handles the device's IPv6LL address */
+	guint32        ip6_mtu;
+ 
+ 	NMRDisc *      rdisc;
+ 	gulong         rdisc_changed_id;
+"
+22,22,0," static int __vcpu_run(struct kvm_vcpu *vcpu)
+ 	struct kvm *kvm = vcpu->kvm;
+ 
+ 	vcpu->srcu_idx = srcu_read_lock(&kvm->srcu);
+ 
+ 	r = 1;
+ 	while (r > 0) {
+"
+23,23,1," base::string16 GetAppForProtocolUsingAssocQuery(const GURL& url) {
+ }
+ 
+ base::string16 GetAppForProtocolUsingRegistry(const GURL& url) {
+  base::string16 command_to_launch;
+ 
+   // First, try and extract the application's display name.
+  base::string16 cmd_key_path = base::ASCIIToUTF16(url.scheme());
+  base::win::RegKey cmd_key_name(HKEY_CLASSES_ROOT, cmd_key_path.c_str(),
+                                  KEY_READ);
+   if (cmd_key_name.ReadValue(NULL, &command_to_launch) == ERROR_SUCCESS &&
+       !command_to_launch.empty()) {
+"
+24,24,1," delete_principal_2_svc(dprinc_arg *arg, struct svc_req *rqstp)
+ {
+     static generic_ret              ret;
+     char                            *prime_arg;
+    gss_buffer_desc                 client_name,
+        service_name;
+     OM_uint32                       minor_stat;
+     kadm5_server_handle_t           handle;
+     const char                      *errmsg = NULL;
+"
+25,25,0,"void stonesoup_handle_taint(char *pva_federalizes)
+achlorhydria_unpeculiarly . reunionistic_cabinlike = ((char *)pva_federalizes);
+upclimbed_cellule(achlorhydria_unpeculiarly);
+void upclimbed_cellule(struct ulicon_crosswicks pochay_mercator)
+free(((char *)pochay_mercator . reunionistic_cabinlike));
+
+"
+26,26,0," dfaanalyze (struct dfa *d, int searchflag)
+       }
+ #ifdef DEBUG
+     /* ... balance the above nonsyntactic #ifdef goo... */
+      fprintf(stderr, ""node %zd:"", i);
+       prtok(d->tokens[i]);
+       putc('\n', stderr);
+       fprintf(stderr, nullable[-1] ? "" nullable: yes\n"" : "" nullable: no\n"");
+       fprintf(stderr, "" firstpos:"");
+      for (j = nfirstpos[-1]; j-- > 0; )
+         {
+          fprintf(stderr, "" %zd:"", firstpos[j].index);
+           prtok(d->tokens[firstpos[j].index]);
+         }
+       fprintf(stderr, ""\n lastpos:"");
+      for (j = nlastpos[-1]; j-- > 0; )
+         {
+          fprintf(stderr, "" %zd:"", lastpos[j].index);
+           prtok(d->tokens[lastpos[j].index]);
+         }
+       putc('\n', stderr);
+"
+27,27,1," static void perf_event_task_output(struct perf_event *event,
+ 	perf_event_header__init_id(&task_event->event_id.header, &sample, event);
+ 
+ 	ret = perf_output_begin(&handle, event,
+				task_event->event_id.header.size, 0, 0);
+ 	if (ret)
+ 		goto out;
+ 
+"
+28,28,0," struct addr_t* MACH0_(get_entrypoint)(struct MACH0_(obj_t)* bin) {
+ 		}
+ 		bin->entry = entry->addr;
+ 	}
+ 	return entry;
+ }
+ 
+ struct lib_t* MACH0_(get_libs)(struct MACH0_(obj_t)* bin) {
+ 	struct lib_t *libs;
+ 	int i;
+ 
+	if (!bin->nlibs) {
+ 		return NULL;
+	}
+	if (!(libs = calloc ((bin->nlibs + 1), sizeof(struct lib_t)))) {
+ 		return NULL;
+	}
+ 	for (i = 0; i < bin->nlibs; i++) {
+ 		strncpy (libs[i].name, bin->libs[i], R_BIN_MACH0_STRING_LENGTH);
+ 		libs[i].name[R_BIN_MACH0_STRING_LENGTH-1] = '\0';
+"
+29,29,0," static const struct {
+ };
+ 
+ TEST(ICUStringConversionsTest, ConvertBetweenCodepageAndWide) {
+  for (size_t i = 0; i < arraysize(kConvertCodepageCases); ++i) {
+     SCOPED_TRACE(base::StringPrintf(
+                      ""Test[%"" PRIuS ""]: <encoded: %s> <codepage: %s>"", i,
+                      kConvertCodepageCases[i].encoded,
+"
+30,30,0,"unsigned int svn_cstring__similarity(const char *stra,const char *strb,svn_membuf_t *buffer,apr_size_t *rlcs) 1004
+svn_string_t stringb ; 1007
+stringb . data = strb; 1010
+stringb . len = strlen ( strb ); 1011
+return svn_string__similarity ( ( & stringa ) , ( & stringb ) , buffer , rlcs ) ; 1012
+unsigned int svn_string__similarity(const svn_string_t *stringa,const svn_string_t *stringb,svn_membuf_t *buffer,apr_size_t *rlcs) 1015
+const char * stra = stringa -> data ; 1017
+const char * strb = stringb -> data ; 1018
+const apr_size_t lena = stringa -> len ; 1019
+const apr_size_t lenb = stringb -> len ; 1020
+const apr_size_t total = lena + lenb ; 1021
+const char * enda = stra + lena ; 1022
+const char * endb = strb + lenb ; 1023
+while ( stra < enda && strb < endb && ( * stra ) == ( * strb ) )  1026
+while ( stra < enda && strb < endb )  1032
+if ( ( * enda ) != ( * endb ) )  1035
+if ( stra < enda && strb < endb )  1042
+const apr_size_t resta = ( enda - stra ) ; 1043
+const apr_size_t restb = ( endb - strb ) ; 1044
+const apr_size_t slots = resta > restb ? restb : resta ; 1045
+if ( resta < restb )  1050
+pstr = stra; 1051
+stra = strb; 1052
+strb = pstr; 1053
+pstr = enda; 1054
+enda = endb; 1055
+endb = pstr; 1056
+svn_membuf__ensure ( buffer , 2 * ( slots + 1 ) * sizeof ( apr_size_t ) ); 1060
+void svn_membuf__ensure(svn_membuf_t *membuf,apr_size_t size) 170
+membuf_ensure ( & membuf -> data , & membuf -> size , size , membuf -> pool ); 172
+inline static void membuf_ensure(void **data,apr_size_t *size,apr_size_t minimum_size,apr_pool_t *pool) 138
+if ( minimum_size > * size )  140
+apr_size_t new_size = * size ; 141
+if ( new_size == 0 )  142
+new_size = minimum_size; 146
+while ( new_size < minimum_size )  149
+const apr_size_t prev_size = new_size ; 151
+new_size *= 2; 152
+if ( prev_size > new_size )  154
+new_size = minimum_size; 155
+membuf_create ( data , size , new_size , pool ); 160
+inline static void membuf_create(void **data,apr_size_t *size,apr_size_t minimum_size,apr_pool_t *pool) 117
+minimum_size = minimum_size + ( 8 - 1 ) & ( ~ ( 8 - 1 ) ); 123
+* data = ( ! minimum_size ? ( ( void * ) 0 ) : apr_palloc ( pool , minimum_size ) ); 124
+* size = minimum_size; 125
+svn_membuf__nzero ( buffer , ( slots + 2 ) * sizeof ( apr_size_t ) ); 1061
+#undef svn_membuf__nzero 196
+svn_membuf_t * const _m_b_f_ = membuf 200
+const apr_size_t _s_z_ = size ; 201
+if ( _s_z_ > _m_b_f_ -> size )  202
+memset ( _m_b_f_ -> data , 0 , _m_b_f_ -> size ); 203
+memset ( _m_b_f_ -> data , 0 , _s_z_ ); 206
+prev = ( buffer -> data ); 1062
+curr = prev + slots + 1; 1063
+for (pstr = stra; pstr < enda; ++pstr) 1065
+for (i = 1; i <= slots; ++i) 1067
+if ( ( * pstr ) == strb [ i - 1 ] )  1068
+curr [ i ] = prev [ i - 1 ] + 1; 1069
+curr [ i ] = ( curr [ i - 1 ] > prev [ i ] ? curr [ i - 1 ] : prev [ i ] ); 1072
+apr_size_t * const temp = prev 1077
+prev = curr; 1078
+curr = temp; 1079
+lcs += prev [ slots ]; 1082
+if ( rlcs )  1084
+* rlcs = lcs; 1085
+if ( total )  1088
+return ( unsigned int ) ( ( 2000 * lcs + total / 2 ) / total ) ; 1089
+
+"
+31,31,1," vmxnet3_io_bar0_write(void *opaque, hwaddr addr,
+ {
+     VMXNET3State *s = opaque;
+ 
+     if (VMW_IS_MULTIREG_ADDR(addr, VMXNET3_REG_TXPROD,
+                         VMXNET3_DEVICE_MAX_TX_QUEUES, VMXNET3_REG_ALIGN)) {
+         int tx_queue_idx =
+"
+32,32,1," prepare_wc_buf (const char *begin, const char *end)
+    to decide whether to fall back on a backtracking matcher. */
+ char *
+ dfaexec (struct dfa *d, char const *begin, char *end,
+         int allow_nl, int *count, int *backref)
+ {
+  int s, s1;		/* Current state. */
+   unsigned char const *p; /* Current input character. */
+  int **trans, *t;	/* Copy of d->trans so it can be optimized
+                                    into a register. */
+   unsigned char eol = eolbyte;	/* Likewise for eolbyte.  */
+   unsigned char saved_end;
+"
+33,33,1," void Navigate(NavigateParams* params) {
+     params->url = GURL(chrome::kExtensionInvalidRequestURL);
+ #endif
+ 
+  // The browser window may want to adjust the disposition.
+  if (params->disposition == WindowOpenDisposition::NEW_POPUP &&
+      source_browser && source_browser->window()) {
+    params->disposition =
+        source_browser->window()->GetDispositionForPopupBounds(
+            params->window_bounds);
+  }
+   // Trying to open a background tab when in an app browser results in
+   // focusing a regular browser window an opening a tab in the background
+   // of that window. Change the disposition to NEW_FOREGROUND_TAB so that
+"
+34,34,1," static irqreturn_t armv7pmu_handle_irq(int irq_num, void *dev)
+ 		if (!armpmu_event_set_period(event, hwc, idx))
+ 			continue;
+ 
+		if (perf_event_overflow(event, 0, &data, regs))
+ 			armpmu->disable(hwc, idx);
+ 	}
+ 
+"
+35,35,0," gsicc_open_search(const char* pname, int namelen, gs_memory_t *mem_gc,
+     }
+ 
+     /* First just try it like it is */
+    if (gs_check_file_permission(mem_gc, pname, namelen, ""r"") >= 0) {
+        str = sfopen(pname, ""r"", mem_gc);
+        if (str != NULL) {
+            *strp = str;
+            return 0;
+        }
+     }
+ 
+     /* If that fails, try %rom% */ /* FIXME: Not sure this is needed or correct */
+"
+36,36,1," PHPAPI php_url *php_url_parse_ex(char const *str, int length)
+                goto nohost;
+        }
+ 
+       e = ue;
+
+       if (!(p = memchr(s, '/', (ue - s)))) {
+               char *query, *fragment;
+
+               query = memchr(s, '?', (ue - s));
+               fragment = memchr(s, '#', (ue - s));
+
+               if (query && fragment) {
+                       if (query > fragment) {
+                               e = fragment;
+                       } else {
+                               e = query;
+                       }
+               } else if (query) {
+                       e = query;
+               } else if (fragment) {
+                       e = fragment;
+               }
+       } else {
+               e = p;
+       }
+ 
+        /* check for login and password */
+        if ((p = zend_memrchr(s, '@', (e-s)))) {
+"
+37,37,1," void FaviconSource::StartDataRequest(const std::string& path,
+   FaviconService* favicon_service =
+       profile_->GetFaviconService(Profile::EXPLICIT_ACCESS);
+   if (favicon_service) {
+    FaviconService::Handle handle;
+     if (path.empty()) {
+       SendDefaultResponse(request_id);
+       return;
+     }
+ 
+     if (path.size() > 8 && path.substr(0, 8) == ""iconurl/"") {
+       // TODO : Change GetFavicon to support combination of IconType.
+       handle = favicon_service->GetFavicon(
+"
+38,38,0," exsltFuncRegisterImportFunc (exsltFuncFunctionData *data,
+     func = (exsltFuncFunctionData*)xmlHashLookup2(ch->hash, URI, name);
+     if (func == NULL) {		/* Not yet present - copy it in */
+ 	func = exsltFuncNewFunctionData();
+        if (func == NULL)
+            return;
+ 	memcpy(func, data, sizeof(exsltFuncFunctionData));
+ 	if (xmlHashAddEntry2(ch->hash, URI, name, func) < 0) {
+ 	    xsltGenericError(xsltGenericErrorContext,
+"
+39,39,0,"char *dfaexec(struct dfa *d,const char *begin,char *end,int allow_nl,size_t *count,int *backref) 3555
+state_num s ; 3558
+state_num s1 ; 3559
+const unsigned char * p ; 3561
+state_num * * trans ; 3564
+state_num * t ; 3565
+unsigned char eol = eolbyte ; 3567
+s = s1 = 0; 3572
+p = ( ( const unsigned char * ) begin ); 3573
+trans = d -> trans; 3574
+* end = eol; 3576
+if ( d -> mb_cur_max > 1 )  3588
+while ( ( t = trans [ s ] ) != ( ( void * ) 0 ) )  3589
+if ( p > buf_end )  3590
+s1 = s; 3593
+if ( s == 0 )  3594
+if ( ( ( char * ) p ) >= end )  3597
+if ( d -> states [ s ] . mbps . nelem == 0 )  3605
+s = t [ * ( p ++ ) ]; 3606
+if ( backref )  3613
+s = transit_state ( d , s , & p ); 3622
+trans = d -> trans; 3623
+while ( ( t = trans [ s ] ) != ( ( void * ) 0 ) )  3627
+s1 = t [ * ( p ++ ) ]; 3628
+if ( ( t = trans [ s1 ] ) == ( ( void * ) 0 ) )  3629
+state_num tmp = s ; 3630
+s = s1; 3631
+s1 = tmp; 3633
+s = t [ * ( p ++ ) ]; 3636
+if ( s >= 0 && ( ( char * ) p ) <= end && d -> fails [ s ] )  3639
+if ( d -> success [ s ] & sbit [ * p ] )  3640
+s1 = s; 3651
+if ( d -> mb_cur_max > 1 )  3652
+s = transit_state ( d , s , & p ); 3655
+trans = d -> trans; 3656
+s = d -> fails [ s ] [ * ( p ++ ) ]; 3659
+if ( ( ( char * ) p ) > end )  3673
+if ( s >= 0 )  3681
+trans = d -> trans; 3683
+if ( p [ - 1 ] == eol && allow_nl )  3686
+s = d -> newlines [ s1 ]; 3687
+s = 0; 3690
+static state_num transit_state(struct dfa *d,state_num s,const unsigned char **pp) 3436
+state_num s1 ; 3438
+int mbclen ; 3440
+int maxlen = 0 ; 3441
+size_t i ; 3442
+size_t nelem = d -> states [ s ] . mbps . nelem ; 3446
+position_set follows ; 3447
+const unsigned char * p1 = * pp ; 3448
+wchar_t wc ; 3449
+if ( nelem > 0 )  3450
+match_lens = check_matching_with_multibyte_ops ( d , s , ( * pp - buf_begin ) ); 3455
+static int *check_matching_with_multibyte_ops(struct dfa *d,state_num s,size_t idx) 3356
+size_t i ; 3358
+int * rarray ; 3359
+rarray = ( ( sizeof ( ( * rarray ) ) == 1 ? xmalloc ( d -> states [ s ] . mbps . nelem ) : xnmalloc ( d -> states [ s ] . mbps . nelem , sizeof ( ( * rarray ) ) ) ) ); 3361
+while ( 0 )  3362
+for (i = 0; i < d -> states[s] . mbps . nelem; ++i) 3363
+position pos = d -> states [ s ] . mbps . elems [ i ] ; 3364
+switch ( d -> tokens [ pos . index ] )  3365
+rarray [ i ] = match_anychar ( d , s , pos , idx ); 3368
+static int match_anychar(struct dfa *d,state_num s,position pos,size_t idx) 3231
+int context ; 3233
+wchar_t wc ; 3234
+int mbclen ; 3235
+wc = inputwcs [ idx ]; 3236
+mbclen = ( mblen_buf [ idx ] == 0 ? 1 : mblen_buf [ idx ] ); 3237
+if ( wc == ( ( wchar_t ) eolbyte ) )  3239
+if ( ! ( syntax_bits & ( ( unsigned long ) 1 ) << 1 << 1 << 1 << 1 << 1 << 1 ) )  3240
+return 0 ; 3241
+if ( wc == ( ( wchar_t ) '\0' ) )  3245
+if ( syntax_bits & ( ( unsigned long ) 1 ) << 1 << 1 << 1 << 1 << 1 << 1 << 1 )  3246
+return 0 ; 3247
+context = wchar_context ( wc ); 3251
+static int wchar_context(wint_t wc) 635
+if ( wc == ( ( wchar_t ) eolbyte ) || wc == 0 )  637
+return 4 ; 638
+if ( wc == '_' || iswalnum ( wc ) )  640
+return 2 ; 641
+return 1 ; 643
+if ( ! ( ( ( ( context & 1 ? pos . constraint & 0xf : 0 ) ) | ( ( context & 2 ? pos . constraint >> 4 & 0xf : 0 ) ) | ( ( context & 4 ? pos . constraint >> 8 & 0xf : 0 ) ) ) & d -> states [ s ] . context ) )  3252
+return 0 ; 3253
+return mbclen ; 3255
+rarray [ i ] = match_mb_charset ( d , s , pos , idx ); 3373
+static int match_mb_charset(struct dfa *d,state_num s,position pos,size_t idx) 3262
+size_t i ; 3264
+int match ; 3266
+int match_len ; 3269
+int op_len ; 3271
+char buffer [ 128 ] ; 3272
+struct mb_char_classes * work_mbc ; 3274
+int context ; 3275
+wchar_t wc ; 3277
+wc = inputwcs [ idx ]; 3278
+if ( wc == ( ( wchar_t ) eolbyte ) )  3280
+if ( ! ( syntax_bits & ( ( unsigned long ) 1 ) << 1 << 1 << 1 << 1 << 1 << 1 ) )  3281
+return 0 ; 3282
+if ( wc == ( ( wchar_t ) '\0' ) )  3286
+if ( syntax_bits & ( ( unsigned long ) 1 ) << 1 << 1 << 1 << 1 << 1 << 1 << 1 )  3287
+return 0 ; 3288
+context = wchar_context ( wc ); 3292
+static int wchar_context(wint_t wc) 635
+if ( wc == ( ( wchar_t ) eolbyte ) || wc == 0 )  637
+return 4 ; 638
+if ( wc == '_' || iswalnum ( wc ) )  640
+return 2 ; 641
+return 1 ; 643
+if ( ! ( ( ( ( context & 1 ? pos . constraint & 0xf : 0 ) ) | ( ( context & 2 ? pos . constraint >> 4 & 0xf : 0 ) ) | ( ( context & 4 ? pos . constraint >> 8 & 0xf : 0 ) ) ) & d -> states [ s ] . context ) )  3293
+return 0 ; 3294
+work_mbc = & d -> mbcsets [ d -> multibyte_prop [ pos . index ] >> 2 ]; 3297
+match = ! work_mbc -> invert; 3298
+match_len = ( mblen_buf [ idx ] == 0 ? 1 : mblen_buf [ idx ] ); 3299
+if ( wc < 1 << 8 && work_mbc -> cset != ( - 1 ) && tstbit ( ( ( unsigned char ) wc ) , d -> charclasses [ work_mbc -> cset ] ) )  3301
+static int tstbit(unsigned int b,const int c[((1 << 8) + 8 * sizeof(int ) - 1) / (8 * sizeof(int ))]) 541
+return c [ b / ( 8 * sizeof ( int ) ) ] & 1 << b % ( 8 * sizeof ( int ) ) ; 543
+for (i = 0; i < work_mbc -> nch_classes; i++) 3305
+if ( iswctype ( ( ( wint_t ) wc ) , work_mbc -> ch_classes [ i ] ) )  3306
+strncpy ( buffer , ( ( const char * ) buf_begin ) + idx , match_len ); 3310
+buffer [ match_len ] = '\0'; 3311
+for (i = 0; i < work_mbc -> nequivs; i++) 3313
+op_len = ( strlen ( work_mbc -> equivs [ i ] ) ); 3314
+strncpy ( buffer , ( ( const char * ) buf_begin ) + idx , op_len ); 3315
+buffer [ op_len ] = '\0'; 3316
+if ( strcoll ( work_mbc -> equivs [ i ] , buffer ) == 0 )  3317
+match_len = op_len; 3318
+for (i = 0; i < work_mbc -> ncoll_elems; i++) 3323
+op_len = ( strlen ( work_mbc -> coll_elems [ i ] ) ); 3324
+strncpy ( buffer , ( ( const char * ) buf_begin ) + idx , op_len ); 3325
+buffer [ op_len ] = '\0'; 3326
+if ( strcoll ( work_mbc -> coll_elems [ i ] , buffer ) == 0 )  3327
+match_len = op_len; 3328
+for (i = 0; i < work_mbc -> nranges; i++) 3333
+if ( work_mbc -> range_sts [ i ] <= wc && wc <= work_mbc -> range_ends [ i ] )  3334
+for (i = 0; i < work_mbc -> nchars; i++) 3339
+if ( wc == work_mbc -> chars [ i ] )  3340
+match = ! match; 3344
+return match ? match_len : 0 ; 3346
+return rarray ; 3381
+for (i = 0; i < nelem; i++) 3456
+if ( match_lens [ i ] > maxlen )  3460
+maxlen = match_lens [ i ]; 3461
+if ( nelem == 0 || maxlen == 0 )  3465
+wc = inputwcs [ * pp - mbclen - buf_begin ]; 3485
+s1 = state_index ( d , ( & follows ) , wchar_context ( wc ) ); 3486
+while ( * pp - p1 < maxlen )  3488
+transit_state_consume_1char ( d , s1 , pp , ( ( void * ) 0 ) , & mbclen , & follows ); 3489
+wc = inputwcs [ * pp - mbclen - buf_begin ]; 3496
+s1 = state_index ( d , ( & follows ) , wchar_context ( wc ) ); 3497
+static status_transit_state transit_state_consume_1char(struct dfa *d,state_num s,const unsigned char **pp,int *match_lens,int *mbclen,position_set *pps) 3390
+state_num s1 ; 3395
+s1 = s; 3404
+copy ( ( & d -> states [ s1 ] . elems ) , pps ); 3410
+static void copy(const position_set *src,position_set *dst) 2213
+if ( dst -> alloc <= src -> nelem )  2216
+size_t new_n_alloc = src -> nelem + ( ! dst -> elems ) ; 2217
+dst -> elems = ( x2nrealloc ( ( dst -> elems ) , & new_n_alloc , sizeof ( ( * dst -> elems ) ) ) ); 2218
+dst -> alloc = new_n_alloc; 2219
+while ( 0 )  2221
+memcpy ( ( dst -> elems ) , ( src -> elems ) , sizeof ( dst -> elems [ 0 ] ) * src -> nelem ); 2222
+dst -> nelem = src -> nelem; 2223
+
+"
+40,40,1," void oz_hcd_pd_reset(void *hpd, void *hport)
+ /*
+  * Context: softirq
+  */
+void oz_hcd_get_desc_cnf(void *hport, u8 req_id, int status, const u8 *desc,
+			int length, int offset, int total_size)
+ {
+ 	struct oz_port *port = hport;
+ 	struct urb *urb;
+"
+41,41,0,"static void good2() 145
+if ( STATIC_CONST_TRUE )  147
+char * password = ( char * ) malloc ( 100 * sizeof ( char ) ) ; 150
+password [ 0 ] = '\0'; 156
+if ( fgets ( password , 100 , stdin ) == NULL )  157
+password [ 0 ] = '\0'; 161
+passwordLen = strlen ( password ); 164
+if ( passwordLen > 0 )  165
+password [ passwordLen - 1 ] = '\0'; 167
+password = realloc ( password , 200 * sizeof ( char ) ); 187
+strcpy ( password , ""Nothing to see here"" ); 189
+printLine ( password ); 190
+void printLine (const char * line) 10
+if ( line != NULL )  12
+printf ( ""%s
+"" , line ); 14
+free ( password ); 191
+
+"
+42,42,0,"void av_url_split(char *proto,int proto_size,char *authorization,int authorization_size,char *hostname,int hostname_size,int *port_ptr,char *path,int path_size,const char *url) 4158
+const char * p ; 4160
+const char * ls ; 4161
+const char * ls2 ; 4162
+const char * at ; 4163
+const char * col ; 4165
+const char * brk ; 4166
+if ( p = ( strchr ( url , ':' ) ) )  4183
+p ++; 4186
+if ( ( * p ) == '/' )  4187
+p ++; 4188
+if ( ( * p ) == '/' )  4190
+p ++; 4191
+ls = ( strchr ( p , '/' ) ); 4200
+ls2 = ( strchr ( p , 63 ) ); 4201
+if ( ! ls )  4202
+ls = ls2; 4203
+if ( ls && ls2 )  4206
+ls = ( ls > ls2 ? ls2 : ls ); 4207
+if ( ls )  4210
+ls = & p [ strlen ( p ) ]; 4215
+if ( ls != p )  4218
+while ( ( at = ( strchr ( p , '@' ) ) ) && at < ls )  4221
+p = at + 1; 4224
+if ( ( * p ) == '[' && ( brk = ( strchr ( p , ']' ) ) ) && brk < ls )  4226
+if ( ( col = ( strchr ( p , ':' ) ) ) && col < ls )  4234
+av_strlcpy ( hostname , p , ( col + 1 - p > hostname_size ? hostname_size : col + 1 - p ) ); 4235
+* port_ptr = atoi ( col + 1 ); 4237
+
+"
+43,43,1," SPL_METHOD(SplFileObject, fgets)
+ SPL_METHOD(SplFileObject, current)
+ {
+ 	spl_filesystem_object *intern = (spl_filesystem_object*)zend_object_store_get_object(getThis() TSRMLS_CC);
+	
+ 	if (zend_parse_parameters_none() == FAILURE) {
+ 		return;
+ 	}
+"
+44,44,0,"static void goodB2G2() 86
+int64_t * data ; 88
+if ( staticReturnsTrue ( ) )  90
+static int staticReturnsTrue() 25
+return 1 ; 27
+data = ( int64_t * ) calloc ( 100 , sizeof ( int64_t ) ); 93
+printLongLongLine ( data [ 0 ] ); 96
+void printLongLongLine (int64_t longLongIntNumber) 46
+printf ( ""%lld
+"" , longLongIntNumber ); 48
+free ( data ); 101
+
+"
+45,45,0,"static void goodG2B() 53
+list < int64_t * > dataList ; 56
+goodG2BSink ( dataList ); 64
+void goodG2BSink(list<int64_t *> dataList) 51
+int64_t * data = dataList . back ( ) ; 53
+int64_t source [ 100 ] = { 0 } ; 55
+size_t i ; 57
+for (i = 0; i < 100; i++) 59
+data [ i ] = source [ i ]; 61
+free ( data ); 64
+
+"
+46,46,0," void PrintMsg_Print_Params::Reset() {
+   display_header_footer = false;
+   title = base::string16();
+   url = base::string16();
+  header_template = base::string16();
+  footer_template = base::string16();
+   should_print_backgrounds = false;
+   printed_doc_type = printing::SkiaDocumentType::PDF;
+ }
+"
+47,47,1," void NavigationRequest::OnStartChecksComplete(
+           : frame_tree_node_->frame_tree()->root()->current_url();
+ 
+   // Walk the ancestor chain to determine whether all frames are same-site. If
+  // not, the |site_for_cookies| is set to an empty URL.
+   //
+   // TODO(mkwst): This is incorrect. It ought to use the definition from
+   // 'Document::SiteForCookies()' in Blink, which special-cases extension
+"
+48,48,0,"static ssize_t
+sg_write(struct file *filp, const char __user *buf, size_t count, loff_t * ppos) 583
+int input_size , blocking ; 586
+Sg_device * sdp ; 588
+Sg_fd * sfp ; 589
+struct sg_header old_hdr ; 591
+if ( ( ! ( sfp = ( Sg_fd * ) filp -> private_data ) ) || ( ! ( sdp = sfp -> parentdp ) ) )  595
+if ( atomic_read ( & sdp -> detaching ) )  599
+if ( ! ( ( filp -> f_flags & O_NONBLOCK ) || scsi_block_when_processing_errors ( sdp -> device ) ) )  601
+if ( ! access_ok ( VERIFY_READ , buf , count ) )  605
+if ( count < SZ_SG_HEADER )  607
+if ( __copy_from_user ( & old_hdr , buf , SZ_SG_HEADER ) )  609
+blocking = ! ( filp -> f_flags & O_NONBLOCK ); 611
+if ( old_hdr . reply_len < 0 )  612
+return sg_new_write ( sfp , filp , buf , count , blocking , 0 , 0 , NULL ) ; 613
+static ssize_t
+sg_new_write(Sg_fd *sfp, struct file *file, const char __user *buf,
+size_t count, int blocking, int read_only, int sg_io_owned,
+Sg_request **o_srp) 692
+Sg_request * srp ; 695
+if ( count < SZ_SG_IO_HDR )  701
+if ( ! access_ok ( VERIFY_READ , buf , count ) )  703
+sfp -> cmd_q = 1; 706
+if ( ! ( srp = sg_add_request ( sfp ) ) )  707
+static Sg_request *
+sg_add_request(Sg_fd * sfp) 2044
+int k ; 2046
+Sg_request * resp ; 2048
+Sg_request * rp = sfp -> req_arr ; 2049
+resp = sfp -> headrp; 2052
+if ( ! resp )  2053
+if ( 0 == sfp -> cmd_q )  2059
+if ( k < SG_MAX_QUEUE )  2066
+memset ( rp , 0 , sizeof ( Sg_request ) ); 2067
+rp -> parentfp = sfp; 2068
+resp -> nextrp = rp; 2071
+resp = rp; 2072
+if ( resp )  2077
+resp -> nextrp = NULL; 2078
+resp -> header . duration = jiffies_to_msecs ( jiffies ); 2079
+return resp ; 2082
+
+"
+49,49,0,"static int stonesoup_ev_handler(struct mg_connection *conn, enum mg_event ev) 317
+char * ifmatch_header ; 318
+char * stonesoup_tainted_buff ; 319
+int buffer_size = 1000 ; 320
+if ( ev == MG_REQUEST )  322
+ifmatch_header = ( char * ) mg_get_header ( conn , ""if-match"" ); 323
+if ( strcmp ( ifmatch_header , ""weak_taint_source_value"" ) == 0 )  324
+while ( 1 )  325
+stonesoup_tainted_buff = ( char * ) malloc ( buffer_size * sizeof ( char ) ); 326
+data_size = mg_get_var ( conn , ""data"" , stonesoup_tainted_buff , buffer_size * sizeof ( char ) ); 328
+if ( data_size < buffer_size )  329
+buffer_size = buffer_size * 2; 333
+stonesoup_handle_taint ( stonesoup_tainted_buff ); 337
+void stonesoup_handle_taint(char *oscilloscopic_acheulian) 4948
+int hangers_regald ; 4950
+char * kurbashed_twelve [ 51 ] = { 0 } ; 4953
+if ( oscilloscopic_acheulian != 0 )  4955
+kurbashed_twelve [ 8 ] = oscilloscopic_acheulian; 4956
+hangers_regald = 1; 4957
+heterosomata_vichy = kurbashed_twelve; 4958
+nubilities_royetness = ( ( char * * ) ( ( ( unsigned long ) heterosomata_vichy ) * hangers_regald * hangers_regald ) ) + 5; 4959
+pavestone_minni ( nubilities_royetness ); 4960
+void pavestone_minni(char **xylenes_bursautee) 4964
+int stonesoup_my_buff_size ; 4968
+genie_oberosterreich = ( ( char * ) ( xylenes_bursautee - 5 ) [ 8 ] ); 4971
+stonesoup_my_buff_size = ( ( int ) ( strlen ( genie_oberosterreich ) ) ); 4979
+for (; stonesoup_ss_i < stonesoup_my_buff_size; ++stonesoup_ss_i) 4980
+
+"
+50,50,0,"conversation_t *find_or_create_conversation(packet_info *pinfo) 1226
+if ( ( conv = find_conversation ( pinfo -> fd -> num , ( & pinfo -> src ) , ( & pinfo -> dst ) , pinfo -> ptype , pinfo -> srcport , pinfo -> destport , 0 ) ) == ( ( void * ) 0 ) )  1230
+conversation_t *find_conversation(const guint32 frame_num,const address *addr_a,const address *addr_b,const port_type ptype,const guint32 port_a,const guint32 port_b,const guint options) 874
+conversation_t * conversation ; 876
+if ( ! ( options & ( 0x01 | 0x02 ) ) )  880
+conversation = conversation_lookup_hashtable ( conversation_hashtable_exact , frame_num , addr_a , addr_b , ptype , port_a , port_b ); 886
+static conversation_t *conversation_lookup_hashtable(GHashTable *hashtable,const guint32 frame_num,const address *addr1,const address *addr2,const port_type ptype,const guint32 port1,const guint32 port2) 802
+conversation_t * match = ( ( void * ) 0 ) ; 805
+conversation_key key ; 807
+key . addr1 = * addr1; 812
+key . addr2 = * addr2; 813
+key . ptype = ptype; 814
+key . port1 = port1; 815
+key . port2 = port2; 816
+chain_head = ( g_hash_table_lookup ( hashtable , ( & key ) ) ); 817
+if ( chain_head && chain_head -> setup_frame <= frame_num )  818
+match = chain_head; 819
+if ( chain_head -> last && chain_head -> last -> setup_frame <= frame_num )  820
+return chain_head -> last ; 821
+if ( chain_head -> latest_found && chain_head -> latest_found -> setup_frame <= frame_num )  823
+match = chain_head -> latest_found; 824
+for (convo = match; convo && convo -> setup_frame <= frame_num; convo = convo -> next) 826
+if ( convo -> setup_frame > match -> setup_frame )  827
+match = convo; 828
+return match ; 835
+if ( conversation == ( ( void * ) 0 ) && ( addr_a -> type ) == AT_FC )  887
+conversation = conversation_lookup_hashtable ( conversation_hashtable_exact , frame_num , addr_b , addr_a , ptype , port_a , port_b ); 891
+static conversation_t *conversation_lookup_hashtable(GHashTable *hashtable,const guint32 frame_num,const address *addr1,const address *addr2,const port_type ptype,const guint32 port1,const guint32 port2) 802
+conversation_t * match = ( ( void * ) 0 ) ; 805
+conversation_key key ; 807
+key . addr1 = * addr1; 812
+key . addr2 = * addr2; 813
+key . ptype = ptype; 814
+key . port1 = port1; 815
+key . port2 = port2; 816
+chain_head = ( g_hash_table_lookup ( hashtable , ( & key ) ) ); 817
+if ( chain_head && chain_head -> setup_frame <= frame_num )  818
+match = chain_head; 819
+if ( chain_head -> last && chain_head -> last -> setup_frame <= frame_num )  820
+return chain_head -> last ; 821
+if ( chain_head -> latest_found && chain_head -> latest_found -> setup_frame <= frame_num )  823
+match = chain_head -> latest_found; 824
+if ( convo -> setup_frame > match -> setup_frame )  827
+match = convo; 828
+return match ; 835
+if ( conversation != ( ( void * ) 0 ) )  893
+if ( ! ( options & 0x02 ) )  901
+conversation = conversation_lookup_hashtable ( conversation_hashtable_no_addr2 , frame_num , addr_a , addr_b , ptype , port_a , port_b ); 911
+static conversation_t *conversation_lookup_hashtable(GHashTable *hashtable,const guint32 frame_num,const address *addr1,const address *addr2,const port_type ptype,const guint32 port1,const guint32 port2) 802
+conversation_t * match = ( ( void * ) 0 ) ; 805
+conversation_key key ; 807
+key . addr1 = * addr1; 812
+key . addr2 = * addr2; 813
+key . ptype = ptype; 814
+key . port1 = port1; 815
+key . port2 = port2; 816
+chain_head = ( g_hash_table_lookup ( hashtable , ( & key ) ) ); 817
+if ( chain_head && chain_head -> setup_frame <= frame_num )  818
+match = chain_head; 819
+if ( chain_head -> last && chain_head -> last -> setup_frame <= frame_num )  820
+return chain_head -> last ; 821
+if ( chain_head -> latest_found && chain_head -> latest_found -> setup_frame <= frame_num )  823
+match = chain_head -> latest_found; 824
+if ( convo -> setup_frame > match -> setup_frame )  827
+match = convo; 828
+return match ; 835
+if ( conversation == ( ( void * ) 0 ) && ( addr_a -> type ) == AT_FC )  912
+conversation = conversation_lookup_hashtable ( conversation_hashtable_no_addr2 , frame_num , addr_b , addr_a , ptype , port_a , port_b ); 916
+static conversation_t *conversation_lookup_hashtable(GHashTable *hashtable,const guint32 frame_num,const address *addr1,const address *addr2,const port_type ptype,const guint32 port1,const guint32 port2) 802
+conversation_t * match = ( ( void * ) 0 ) ; 805
+conversation_key key ; 807
+key . addr1 = * addr1; 812
+key . addr2 = * addr2; 813
+key . ptype = ptype; 814
+key . port1 = port1; 815
+key . port2 = port2; 816
+chain_head = ( g_hash_table_lookup ( hashtable , ( & key ) ) ); 817
+if ( chain_head && chain_head -> setup_frame <= frame_num )  818
+match = chain_head; 819
+if ( chain_head -> last && chain_head -> last -> setup_frame <= frame_num )  820
+return chain_head -> last ; 821
+if ( chain_head -> latest_found && chain_head -> latest_found -> setup_frame <= frame_num )  823
+match = chain_head -> latest_found; 824
+if ( convo -> setup_frame > match -> setup_frame )  827
+match = convo; 828
+return match ; 835
+if ( conversation != ( ( void * ) 0 ) )  918
+if ( ! ( options & 0x01 ) )  950
+conversation = conversation_lookup_hashtable ( conversation_hashtable_no_addr2 , frame_num , addr_b , addr_a , ptype , port_b , port_a ); 951
+static conversation_t *conversation_lookup_hashtable(GHashTable *hashtable,const guint32 frame_num,const address *addr1,const address *addr2,const port_type ptype,const guint32 port1,const guint32 port2) 802
+conversation_t * match = ( ( void * ) 0 ) ; 805
+conversation_key key ; 807
+key . addr1 = * addr1; 812
+key . addr2 = * addr2; 813
+key . ptype = ptype; 814
+key . port1 = port1; 815
+key . port2 = port2; 816
+chain_head = ( g_hash_table_lookup ( hashtable , ( & key ) ) ); 817
+if ( chain_head && chain_head -> setup_frame <= frame_num )  818
+match = chain_head; 819
+if ( chain_head -> last && chain_head -> last -> setup_frame <= frame_num )  820
+return chain_head -> last ; 821
+if ( chain_head -> latest_found && chain_head -> latest_found -> setup_frame <= frame_num )  823
+match = chain_head -> latest_found; 824
+if ( convo -> setup_frame > match -> setup_frame )  827
+match = convo; 828
+return match ; 835
+if ( conversation != ( ( void * ) 0 ) )  952
+if ( ! ( options & 0x01 ) )  977
+conversation = conversation_lookup_hashtable ( conversation_hashtable_no_port2 , frame_num , addr_a , addr_b , ptype , port_a , port_b ); 987
+static conversation_t *conversation_lookup_hashtable(GHashTable *hashtable,const guint32 frame_num,const address *addr1,const address *addr2,const port_type ptype,const guint32 port1,const guint32 port2) 802
+conversation_t * match = ( ( void * ) 0 ) ; 805
+conversation_key key ; 807
+key . addr1 = * addr1; 812
+key . addr2 = * addr2; 813
+key . ptype = ptype; 814
+key . port1 = port1; 815
+key . port2 = port2; 816
+chain_head = ( g_hash_table_lookup ( hashtable , ( & key ) ) ); 817
+if ( chain_head && chain_head -> setup_frame <= frame_num )  818
+match = chain_head; 819
+if ( chain_head -> last && chain_head -> last -> setup_frame <= frame_num )  820
+return chain_head -> last ; 821
+if ( chain_head -> latest_found && chain_head -> latest_found -> setup_frame <= frame_num )  823
+match = chain_head -> latest_found; 824
+if ( convo -> setup_frame > match -> setup_frame )  827
+match = convo; 828
+return match ; 835
+if ( conversation == ( ( void * ) 0 ) && ( addr_a -> type ) == AT_FC )  988
+conversation = conversation_lookup_hashtable ( conversation_hashtable_no_port2 , frame_num , addr_b , addr_a , ptype , port_a , port_b ); 992
+static conversation_t *conversation_lookup_hashtable(GHashTable *hashtable,const guint32 frame_num,const address *addr1,const address *addr2,const port_type ptype,const guint32 port1,const guint32 port2) 802
+conversation_t * match = ( ( void * ) 0 ) ; 805
+conversation_key key ; 807
+key . addr1 = * addr1; 812
+key . addr2 = * addr2; 813
+key . ptype = ptype; 814
+key . port1 = port1; 815
+key . port2 = port2; 816
+chain_head = ( g_hash_table_lookup ( hashtable , ( & key ) ) ); 817
+if ( chain_head && chain_head -> setup_frame <= frame_num )  818
+match = chain_head; 819
+if ( chain_head -> last && chain_head -> last -> setup_frame <= frame_num )  820
+return chain_head -> last ; 821
+if ( chain_head -> latest_found && chain_head -> latest_found -> setup_frame <= frame_num )  823
+match = chain_head -> latest_found; 824
+if ( convo -> setup_frame > match -> setup_frame )  827
+match = convo; 828
+return match ; 835
+if ( conversation != ( ( void * ) 0 ) )  994
+if ( ! ( options & 0x02 ) )  1026
+conversation = conversation_lookup_hashtable ( conversation_hashtable_no_port2 , frame_num , addr_b , addr_a , ptype , port_b , port_a ); 1027
+static conversation_t *conversation_lookup_hashtable(GHashTable *hashtable,const guint32 frame_num,const address *addr1,const address *addr2,const port_type ptype,const guint32 port1,const guint32 port2) 802
+conversation_t * match = ( ( void * ) 0 ) ; 805
+conversation_key key ; 807
+key . addr1 = * addr1; 812
+key . addr2 = * addr2; 813
+key . ptype = ptype; 814
+key . port1 = port1; 815
+key . port2 = port2; 816
+chain_head = ( g_hash_table_lookup ( hashtable , ( & key ) ) ); 817
+if ( chain_head && chain_head -> setup_frame <= frame_num )  818
+match = chain_head; 819
+if ( chain_head -> last && chain_head -> last -> setup_frame <= frame_num )  820
+return chain_head -> last ; 821
+if ( chain_head -> latest_found && chain_head -> latest_found -> setup_frame <= frame_num )  823
+match = chain_head -> latest_found; 824
+if ( convo -> setup_frame > match -> setup_frame )  827
+match = convo; 828
+return match ; 835
+if ( conversation != ( ( void * ) 0 ) )  1028
+if ( ptype != PT_UDP )  1037
+if ( ! ( conversation -> options & 0x08 ) )  1038
+conversation = conversation_create_from_template ( conversation , 0 , port_a ); 1042
+static conversation_t *conversation_create_from_template(conversation_t *conversation,const address *addr2,const guint32 port2) 141
+if ( conversation -> options & 0x08 && ( conversation -> key_ptr -> ptype ) != PT_UDP )  147
+conversation_t * new_conversation_from_template ; 152
+guint options = conversation -> options & ( ~ ( 0x08 | 0x01 | 0x02 ) ) ; 153
+if ( conversation -> options & 0x01 && conversation -> options & 0x02 )  157
+new_conversation_from_template = conversation_new ( conversation -> setup_frame , ( & conversation -> key_ptr -> addr1 ) , addr2 , conversation -> key_ptr -> ptype , conversation -> key_ptr -> port1 , port2 , options ); 163
+conversation_t *conversation_new(const guint32 setup_frame,const address *addr1,const address *addr2,const port_type ptype,const guint32 port1,const guint32 port2,const guint options) 668
+conversation_key * new_key ; 676
+new_key = ( se_alloc ( sizeof ( struct conversation_key ) ) ); 693
+new_key -> next = conversation_keys; 694
+guint8 * SE_COPY_ADDRESS_data ; 697
+( & new_key -> addr1 ) -> type = addr1 -> type; 698
+( & new_key -> addr1 ) -> len = addr1 -> len; 699
+SE_COPY_ADDRESS_data = ( se_alloc ( ( addr1 -> len ) ) ); 700
+memcpy ( SE_COPY_ADDRESS_data , addr1 -> data , ( addr1 -> len ) ); 701
+( & new_key -> addr1 ) -> data = SE_COPY_ADDRESS_data; 702
+guint8 * SE_COPY_ADDRESS_data ; 706
+( & new_key -> addr2 ) -> type = addr2 -> type; 707
+( & new_key -> addr2 ) -> len = addr2 -> len; 708
+SE_COPY_ADDRESS_data = ( se_alloc ( ( addr2 -> len ) ) ); 709
+memcpy ( SE_COPY_ADDRESS_data , addr2 -> data , ( addr2 -> len ) ); 710
+( & new_key -> addr2 ) -> data = SE_COPY_ADDRESS_data; 711
+new_key -> ptype = ptype; 714
+new_key -> port1 = port1; 715
+new_key -> port2 = port2; 716
+conversation = ( ( conversation_t * ) ( se_alloc ( sizeof ( conversation_t ) ) ) ); 717
+memset ( conversation , 0 , sizeof ( conversation_t ) ); 718
+conversation -> index = new_index; 719
+conversation -> setup_frame = setup_frame; 720
+conversation -> data_list = ( ( void * ) 0 ); 721
+conversation -> dissector_handle = ( ( void * ) 0 ); 723
+conversation -> options = options; 725
+conversation -> key_ptr = new_key; 726
+return conversation ; 729
+if ( conversation -> options & 0x02 )  166
+new_conversation_from_template = conversation_new ( conversation -> setup_frame , ( & conversation -> key_ptr -> addr1 ) , ( & conversation -> key_ptr -> addr2 ) , conversation -> key_ptr -> ptype , conversation -> key_ptr -> port1 , port2 , options ); 171
+conversation_t *conversation_new(const guint32 setup_frame,const address *addr1,const address *addr2,const port_type ptype,const guint32 port1,const guint32 port2,const guint options) 668
+conversation_key * new_key ; 676
+new_key = ( se_alloc ( sizeof ( struct conversation_key ) ) ); 693
+new_key -> next = conversation_keys; 694
+guint8 * SE_COPY_ADDRESS_data ; 697
+( & new_key -> addr1 ) -> type = addr1 -> type; 698
+( & new_key -> addr1 ) -> len = addr1 -> len; 699
+SE_COPY_ADDRESS_data = ( se_alloc ( ( addr1 -> len ) ) ); 700
+memcpy ( SE_COPY_ADDRESS_data , addr1 -> data , ( addr1 -> len ) ); 701
+( & new_key -> addr1 ) -> data = SE_COPY_ADDRESS_data; 702
+guint8 * SE_COPY_ADDRESS_data ; 706
+( & new_key -> addr2 ) -> type = addr2 -> type; 707
+( & new_key -> addr2 ) -> len = addr2 -> len; 708
+SE_COPY_ADDRESS_data = ( se_alloc ( ( addr2 -> len ) ) ); 709
+memcpy ( SE_COPY_ADDRESS_data , addr2 -> data , ( addr2 -> len ) ); 710
+( & new_key -> addr2 ) -> data = SE_COPY_ADDRESS_data; 711
+new_key -> ptype = ptype; 714
+new_key -> port1 = port1; 715
+new_key -> port2 = port2; 716
+conversation = ( ( conversation_t * ) ( se_alloc ( sizeof ( conversation_t ) ) ) ); 717
+memset ( conversation , 0 , sizeof ( conversation_t ) ); 718
+conversation -> index = new_index; 719
+conversation -> setup_frame = setup_frame; 720
+conversation -> data_list = ( ( void * ) 0 ); 721
+conversation -> dissector_handle = ( ( void * ) 0 ); 723
+conversation -> options = options; 725
+conversation -> key_ptr = new_key; 726
+return conversation ; 729
+if ( conversation -> options & 0x01 )  174
+new_conversation_from_template = conversation_new ( conversation -> setup_frame , ( & conversation -> key_ptr -> addr1 ) , addr2 , conversation -> key_ptr -> ptype , conversation -> key_ptr -> port1 , conversation -> key_ptr -> port2 , options ); 179
+conversation_t *conversation_new(const guint32 setup_frame,const address *addr1,const address *addr2,const port_type ptype,const guint32 port1,const guint32 port2,const guint options) 668
+conversation_key * new_key ; 676
+new_key = ( se_alloc ( sizeof ( struct conversation_key ) ) ); 693
+new_key -> next = conversation_keys; 694
+guint8 * SE_COPY_ADDRESS_data ; 697
+( & new_key -> addr1 ) -> type = addr1 -> type; 698
+( & new_key -> addr1 ) -> len = addr1 -> len; 699
+SE_COPY_ADDRESS_data = ( se_alloc ( ( addr1 -> len ) ) ); 700
+memcpy ( SE_COPY_ADDRESS_data , addr1 -> data , ( addr1 -> len ) ); 701
+( & new_key -> addr1 ) -> data = SE_COPY_ADDRESS_data; 702
+guint8 * SE_COPY_ADDRESS_data ; 706
+( & new_key -> addr2 ) -> type = addr2 -> type; 707
+( & new_key -> addr2 ) -> len = addr2 -> len; 708
+SE_COPY_ADDRESS_data = ( se_alloc ( ( addr2 -> len ) ) ); 709
+memcpy ( SE_COPY_ADDRESS_data , addr2 -> data , ( addr2 -> len ) ); 710
+( & new_key -> addr2 ) -> data = SE_COPY_ADDRESS_data; 711
+new_key -> ptype = ptype; 714
+new_key -> port1 = port1; 715
+new_key -> port2 = port2; 716
+conversation = ( ( conversation_t * ) ( se_alloc ( sizeof ( conversation_t ) ) ) ); 717
+memset ( conversation , 0 , sizeof ( conversation_t ) ); 718
+conversation -> index = new_index; 719
+conversation -> setup_frame = setup_frame; 720
+conversation -> data_list = ( ( void * ) 0 ); 721
+conversation -> dissector_handle = ( ( void * ) 0 ); 723
+conversation -> options = options; 725
+conversation -> key_ptr = new_key; 726
+return conversation ; 729
+return conversation ; 187
+return new_conversation_from_template ; 196
+return conversation ; 199
+conversation = conversation_lookup_hashtable ( conversation_hashtable_no_addr2_or_port2 , frame_num , addr_a , addr_b , ptype , port_a , port_b ); 1057
+static conversation_t *conversation_lookup_hashtable(GHashTable *hashtable,const guint32 frame_num,const address *addr1,const address *addr2,const port_type ptype,const guint32 port1,const guint32 port2) 802
+conversation_t * match = ( ( void * ) 0 ) ; 805
+conversation_key key ; 807
+key . addr1 = * addr1; 812
+key . addr2 = * addr2; 813
+key . ptype = ptype; 814
+key . port1 = port1; 815
+key . port2 = port2; 816
+chain_head = ( g_hash_table_lookup ( hashtable , ( & key ) ) ); 817
+if ( chain_head && chain_head -> setup_frame <= frame_num )  818
+match = chain_head; 819
+if ( chain_head -> last && chain_head -> last -> setup_frame <= frame_num )  820
+return chain_head -> last ; 821
+if ( chain_head -> latest_found && chain_head -> latest_found -> setup_frame <= frame_num )  823
+match = chain_head -> latest_found; 824
+if ( convo -> setup_frame > match -> setup_frame )  827
+match = convo; 828
+return match ; 835
+if ( conversation != ( ( void * ) 0 ) )  1058
+if ( ptype != PT_UDP )  1072
+if ( ! ( conversation -> options & 0x08 ) )  1073
+if ( ! ( conversation -> options & 0x02 ) )  1077
+conversation_set_port2 ( conversation , port_b ); 1078
+void conversation_set_port2(conversation_t *conv,const guint32 port) 736
+( void ) ( ! ( conv -> options & 0x08 ) ? ( ( void ) 0 ) : ( ( getenv ( ""WIRESHARK_ABORT_ON_DISSECTOR_BUG"" ) != ( ( void * ) 0 ) ? abort ( ) : except_throw ( 1 , 4 , ( ep_strdup_printf ( ""%s:%u: failed assertion \""%s\"" (%s)"" , ""conversation.c"" , 680 , ""!(conv->options & 0x08)"" , ""Use the conversation_create_from_template function when the CONVERSATION_TEMPLATE bit is set in the options mask"" ) ) ) ) ) ); 738
+
+"
+51,51,1," void ExtensionInstalledBubbleGtk::ShowInternal() {
+   string16 extension_name = UTF8ToUTF16(extension_->name());
+   base::i18n::AdjustStringForLocaleDirection(&extension_name);
+   std::string heading_text = l10n_util::GetStringFUTF8(
+      IDS_EXTENSION_INSTALLED_HEADING, extension_name,
+      l10n_util::GetStringUTF16(IDS_SHORT_PRODUCT_NAME));
+   char* markup = g_markup_printf_escaped(""<span size=\""larger\"">%s</span>"",
+       heading_text.c_str());
+   gtk_label_set_markup(GTK_LABEL(heading_label), markup);
+"
+52,52,0,"char *svn__ui64toa_sep(apr_uint64_t number,char seperator,apr_pool_t *pool)
+char buffer [ 2 * 21 ] ;
+ui64toa_sep ( number , seperator , buffer );
+
+"
+53,53,0,"nsresult MediaPipeline::TransportReady_s(TransportInfo &info) 211
+if ( info . state_ != MP_CONNECTING )  216
+nsresult res ; 227
+TransportLayerDtls * dtls = static_cast < TransportLayerDtls * > info . transport_ -> GetLayer ( TransportLayerDtls :: ID ( ) ) 230
+res = dtls -> GetSrtpCipher ( & cipher_suite ); 235
+if ( NS_FAILED ( res ) )  236
+unsigned char srtp_block [ SRTP_TOTAL_KEY_LENGTH * 2 ] ; 244
+res = dtls -> ExportKeyingMaterial ( kDTLSExporterLabel , false , """" , srtp_block , sizeof ( srtp_block ) ); 245
+if ( NS_FAILED ( res ) )  247
+unsigned char server_write_key [ SRTP_TOTAL_KEY_LENGTH ] ; 259
+int offset = 0 ; 260
+offset += SRTP_MASTER_KEY_LENGTH; 262
+memcpy ( server_write_key , srtp_block + offset , SRTP_MASTER_KEY_LENGTH ); 263
+offset += SRTP_MASTER_KEY_LENGTH; 264
+offset += SRTP_MASTER_SALT_LENGTH; 267
+memcpy ( server_write_key + SRTP_MASTER_KEY_LENGTH , srtp_block + offset , SRTP_MASTER_SALT_LENGTH ); 268
+read_key = server_write_key; 278
+write_key = server_write_key; 280
+info . send_srtp_ = SrtpFlow :: Create ( cipher_suite , false , write_key , SRTP_TOTAL_KEY_LENGTH ); 285
+info . recv_srtp_ = SrtpFlow :: Create ( cipher_suite , true , read_key , SRTP_TOTAL_KEY_LENGTH ); 287
+if ( ! info . send_srtp_ || ! info . recv_srtp_ )  289
+MOZ_MTLOG ( ML_ERROR , ""Couldn't create SRTP flow for "" << ToString ( info . type_ ) ); 290
+static const char* ToString(MediaPipeline::RtpType type) 203
+return array [ type ] ; 208
+info . state_ = MP_CLOSED; 292
+UpdateRtcpMuxState ( info ); 293
+MOZ_MTLOG ( ML_INFO , ""Listening for "" << ToString ( info . type_ )
+<< "" packets received on "" <<
+static_cast < void * > ( dtls -> downward ( ) ) ) 299
+static const char* ToString(MediaPipeline::RtpType type) 203
+return array [ type ] ; 208
+switch ( info . type_ )  301
+info . state_ = MP_OPEN; 321
+UpdateRtcpMuxState ( info ); 322
+
+"
